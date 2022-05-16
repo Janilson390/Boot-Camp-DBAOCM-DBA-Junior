@@ -9,6 +9,8 @@ $ env | grep ORA
 
 $ sqlplus / as sysdba
 
+### Subindo o banco de dados
+
 SQL> statup nomount;
 
 SQL> shutdown immediate;
@@ -16,3 +18,17 @@ SQL> shutdown immediate;
 SQL> SELECT COUNT(*) FROM V$SESSION;
 
 SQL> ALTER DATABASE MOUNT;
+
+SQL> ALTER DATABASE OPEN;
+
+### Derrrubanco o banco de dados
+
+SQL> ALTER DATABASE CLOSE;
+
+SQL> SELECT OPEN_MODE FROM V$DATABASE;
+
+SQL> SELECT STATUS FROM V$INSTANCE;
+
+SQL> ALTER DATABASE DISMOUNT;
+
+SQL> SHUTDOWN;
