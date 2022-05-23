@@ -44,7 +44,7 @@ Após instação da máquina virtual, fazer esses procedimentos
 - # chmod -R 775 /u01 /u02 *permissões para os diretórios*
 
 - $ cd /u01/app/oracle/product/19.0.0/dbhome_1 
-- $ unzip -op /home/oracle/{arquivo do oracle} *descompactar o arquivo de instalaçãop do oracle*
+- $ unzip -oq /home/oracle/{arquivo do oracle} *descompactar o arquivo de instalaçãop do oracle*
 > diretório base é o */u01/app/oracle*. Dentro dele, posso ter outros homes.
 - $ ls -ltrh *checando os arquivos do diretório*
 - $ du -h *checar a quantidade de arquivos de dentro de um diretório*
